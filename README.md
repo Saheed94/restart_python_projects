@@ -1,0 +1,32 @@
+**This lab Repository helps Learners to understand how to :**
+Use the Python shell
+Use the int data type
+Use the float data type
+Use the complex data type
+Use the bool data type
+Write Python code that uses the string data type
+Concatenate strings
+Use the string to get input
+Format strings for output
+Use the list data type
+Use the tuple data type
+Use the dictionary data type
+Use numeric data types
+Use string data types
+Use the list data type
+Use a for loop
+Use the print() function
+Use numeric data types
+Use string data types
+Use the dictionary data type
+Use the list data type
+Use a for loop
+Use the print() function
+Use the if statement
+Use the else statement
+Use the import statement
+Use the if statement
+Use the else statement
+Use the elif statement
+Use a while loop
+Use a for loop
