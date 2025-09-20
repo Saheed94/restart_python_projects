@@ -1,0 +1,88 @@
+#Conditional Examples
+
+if statements
+The keyword if starts a conditional statement. It’s a necessary component of any conditional statement. In the following example, if begins a statement that tells Python to print an "OK" message when the HTTP response status code equals 200:
+
+if status == 200:
+
+    print("OK")
+
+This code consists of a header and a body.
+
+The header of an if statement
+The first line of this code is the header. In the header of an if statement, the keyword if is followed by the condition. Here, the condition is that the status variable is equal to a value of 200. The condition can be placed in parentheses:
+
+if (status == 200):
+
+    print("OK")
+
+In cases like this one, placing parentheses around conditions in Python is optional. You might want to include them if it helps you with code readability. However, this condition will be processed the same way if written without parentheses. 
+
+In other situations, because Python evaluates the conditions in parentheses first, parentheses can affect how Python processes conditions. You will read more about one of these in the section of this reading on not.
+
+Note: You must always place a colon (:) at the end of the header. Without this syntax, the code will produce an error.
+
+The body of an if statement
+
+After the header of an if statement comes the body of the if statement. This tells Python what action or actions to perform when the condition evaluates to True. In this example, there is just one action, printing "OK" to the screen. In other cases, there might be more lines of code with additional actions.
+
+Note: For the body of the if statement to execute as intended, it must be indented further than the header. Additionally, if there are multiple lines of code within the body, they must all be indented consistently. 
+
+Continuing conditionals with else and elif
+In the previous example, if the HTTP status response code was not equal to 200, the condition would evaluate to False and Python would continue with the rest of the program. However, it’s also possible to specify alternative actions with else and elif.
+
+else statements
+The keyword else precedes a code section that only evaluates when all conditions that precede it within the conditional statement evaluate to False.
+
+In the following example, when the HTTP response status code is not equal to 200, it prints an alternative message of "check other status":
+
+if status == 200:
+
+    print("OK")
+
+else:
+
+    print("check other status")
+
+Note: Like with if, a colon (:) is required after else, and the body that follows the else header is indented.
+
+elif statements
+In some cases, you might have multiple alternative actions that depend on new conditions. In that case, you can use elif. The elif keyword precedes a condition that is only evaluated when previous conditions evaluate to False. Unlike with else, there can be multiple elif statements following if.
+
+For example, you might want to print one message if the HTTP response status code is 200, one message if it is 400, and one if it is 500. The following code demonstrates how you can use elif for this: 
+
+if status == 200:
+
+    print("OK")
+
+elif status == 400:
+
+    print("Bad Request")
+
+elif status == 500:
+
+    print("Internal Server Error") 
+
+Python will first check if the value of status is 200, and if this evaluates to False, it will go onto the first elif statement. There, it will check whether the value of status is 400. If that evaluates to True, it will print "Bad Request", but if it evaluates to False, it will go on to the next elif statement. 
+
+If you want the code to print another message when all conditions evaluate to False, then you can incorporate else after the last elif. In this example, if it reaches the else statement, it prints a message to check the status:
+
+if status == 200:
+
+    print("OK")
+
+elif status == 400:
+
+    print("Bad Request")
+
+elif status == 500:
+
+    print("Internal Server Error")
+
+else:
+
+    print("check other status")
+
+Just like with if and else, it’s important to place a colon (:) after the elif header and indent the code that follows this header.
+
+Note: Python processes multiple elif statements differently than multiple if statements. When it reaches an elif statement that evaluates to True, it won’t check the following elif statements. On the other hand, Python will run all if statements
