@@ -116,5 +116,9 @@
 # for i in range(5):
 #     print("i am learning how to use the for loop command")
 
-for i in [0,1,2,3,5,6,7,8,9,10,11]:
-    print(i)
+# for i in [0,1,2,3,5,6,7,8,9,10,11]:
+#     print("the number is" + " " + str(i))
+
+my_families = ["`saheed", "idris", "Quadri", "Quam"]
+for brothers in my_families:
+    print(brothers)
